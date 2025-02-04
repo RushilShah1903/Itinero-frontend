@@ -1,38 +1,32 @@
-/* Ensure full-page layout */
-html, body {
-    width: 100%;
-    height: 100%;
+/* General Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: #f5f5f5; /* Soft Beige Background */
-    color: #333; /* Dark Gray for readability */
 }
 
-/* Dashboard container */
+/* Dashboard Layout */
 .dashboard-container {
     display: flex;
     height: 100vh;
 }
 
-/* Sidebar with a modern navy gradient */
+/* Sidebar */
 .sidebar {
     width: 250px;
-    background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark navy gradient */
-    padding: 20px;
+    background: linear-gradient(135deg, #2c3e50, #4a90e2); /* Navy to Teal */
     color: white;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 .sidebar h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 22px;
 }
 
 .sidebar ul {
     list-style: none;
-    padding: 0;
 }
 
 .sidebar ul li {
@@ -40,108 +34,159 @@ html, body {
 }
 
 .sidebar ul li a {
+    color: white;
     text-decoration: none;
-    color: #d1ecff; /* Soft teal */
     font-size: 16px;
     display: block;
     padding: 10px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
 .sidebar ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
-/* Main content with a soft gradient */
+/* Main Content */
 .main-content {
-    flex: 1;
-    padding: 20px;
-    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Soft White to Light Gray */
-    color: #333; /* Dark text for contrast */
-}
-
-/* Headings */
-h1, h2, h3 {
+    flex-grow: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Soft Beige to White */
     color: #2c3e50; /* Navy */
 }
 
-/* Top Navbar */
 .top-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Admin info */
-.top-navbar .admin-info {
+.admin-info {
     display: flex;
     align-items: center;
 }
 
-.top-navbar .admin-info img {
+.admin-info img {
     border-radius: 50%;
     margin-left: 10px;
 }
 
-/* Dashboard Overview Cards */
+/* Dashboard Overview */
 .dashboard-overview {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .card {
-    width: 23%;
+    background: white;
     padding: 20px;
-    text-align: center;
-    background: #ffffff; /* White background for modern look */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    color: #2c3e50; /* Navy */
-}
-
-.card h3 {
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Latest Bookings */
-.latest-bookings {
-    margin-top: 30px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    color: #2c3e50;
-}
-
-.latest-bookings h2 {
-    margin-bottom: 15px;
-}
-
-/* Table Styling */
-table {
+.latest-bookings table {
     width: 100%;
     border-collapse: collapse;
-    color: #333; /* Dark text */
+    margin-top: 10px;
 }
 
-table th, table td {
+.latest-bookings th, .latest-bookings td {
     padding: 10px;
-    border: 1px solid #d1ecff; /* Soft teal border */
+    border: 1px solid #ddd;
     text-align: left;
 }
 
-table th {
-    background: #4a90e2; /* Teal header */
-    color: white;
+/* Trip Requests */
+/* Trip Requests Section */
+/* Trip Requests Section */
+.trip-requests {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 5px;
+    justify-content: center;
 }
 
-table tr:nth-child(even) {
-    background: #f0f8ff; /* Light Blue alternate row */
+/* Bigger Square Trip Request Cards */
+.request-card {
+    background: #f8f9fa;
+    width: 500pxpx; /* Bigger size */
+    height: 250px; /* Square format */
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #4a90e2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Employee Name */
+.request-card h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Trip Details */
+.request-card p {
+    font-size: 14px;
+    color: #4a90e2;
+    margin-bottom: 5px;
+}
+
+/* Date & Expense */
+.trip-date, .trip-expense {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Action Buttons */
+.request-card .btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.approve-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.approve-btn:hover {
+    background-color: #218838;
+}
+
+.reject-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.reject-btn:hover {
+    background-color: #c82333;
 }

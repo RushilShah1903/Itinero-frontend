@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 const routes: Routes = [
   {path:'', component: RegisterComponent},
   {path:'login', component: LoginComponent},
-  {path:'admin-dashboard', component: AdminDashboardComponent}
+  {path:'admin-dashboard', component: AdminDashboardComponent},
+  {path:'user-dashboard', component:UserDashboardComponent}
 ];
 
 @NgModule({
