@@ -170,6 +170,7 @@
     cursor: pointer;
     font-size: 14px;
     transition: 0.3s;
+    width:250px;
 }
 
 .approve-btn:hover {
@@ -185,6 +186,7 @@
     cursor: pointer;
     font-size: 14px;
     transition: 0.3s;
+    width: 250px;
 }
 
 .reject-btn:hover {
