@@ -1,4 +1,10 @@
 /* Consistent Styling for Headers Across Components */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Soft Beige to White */
+    color: #2c3e50; /* Navy */
+}
 h2 {
     font-size: 24px;
     color: #2c3e50; /* Navy */
@@ -8,7 +14,7 @@ h2 {
 /* Styling for the trip requests section */
 .trip-management {
     padding: 20px;
-    background-color: #f7f7f7;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
 }
 
 .trip-requests {

@@ -1,19 +1,25 @@
 <div class="main">
     <div class="auth-container">
         <h2>Itinero</h2>
-        <form (submit)="onSubmit()">
-            <div *ngIf="!isLoginMode">
-                <input type="text" placeholder="Full Name" name="name" [(ngModel)]="name" required />
-            </div>
-            <input type="email" placeholder="Email" name="email" [(ngModel)]="email" required />
-            <input type="password" placeholder="Password" name="password" [(ngModel)]="password" required />
-            <button type="submit">{{ isLoginMode ? 'Login' : 'Register' }}</button>
+        
+        <!-- Login Form -->
+        <form *ngIf="isLoginMode; else registerForm">
+            <input type="email" placeholder="Email" name="email" required />
+            <input type="password" placeholder="Password" name="password" required />
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a (click)="toggleMode()">Register</a></p>
         </form>
-        <p>
-            {{ isLoginMode ? "Don't have an account?" : "Already have an account?" }}
-            <a [routerLink]="isLoginMode ? '/register' : '/login'">
-                {{ isLoginMode ? 'Register' : 'Login' }}
-            </a>
-        </p>
+
+        <!-- Register Form -->
+        <ng-template #registerForm>
+            <form>
+                <input type="text" placeholder="Full Name" name="name" required />
+                <input type="email" placeholder="Email" name="email" required />
+                <input type="password" placeholder="Password" name="password" required />
+                <button type="submit">Register</button>
+                <p>Already have an account? <a (click)="toggleMode()">Login</a></p>
+            </form>
+        </ng-template>
+
     </div>
 </div>

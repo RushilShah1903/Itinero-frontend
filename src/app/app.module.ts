@@ -28,7 +28,7 @@ import { AuthComponent } from './auth/auth.component';
     ReportsComponent,
     SettingsComponent,
     BooktripComponent,
-    AuthComponent
+    AuthComponent,
   ],
   imports: [
     BrowserModule,

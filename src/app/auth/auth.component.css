@@ -1,3 +1,4 @@
+/* Main Container */
 .main {
     display: flex;
     justify-content: center;
@@ -6,30 +7,32 @@
     background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Soft Beige to White */
 }
 
+/* Authentication Container */
 .auth-container {
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
     text-align: center;
-    width: 320px;
 }
 
-.auth-container h2 {
-    margin-bottom: 20px;
-    color: #2c3e50; /* Navy */
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.auth-container input {
+input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
     border: 1px solid #d1ecff;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.auth-container button {
+button {
     width: 100%;
     padding: 12px;
     background-color: #4a90e2; /* Teal */
@@ -43,18 +46,22 @@
     transition: 0.3s;
 }
 
-.auth-container button:hover {
+button:hover {
     background-color: #357ABD; /* Darker teal */
 }
 
-.auth-container p {
+/* Link Styling */
+p {
     margin-top: 10px;
-    font-size: 14px;
 }
 
-.auth-container a {
+a {
     color: #4a90e2;
+    cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
