@@ -1,0 +1,42 @@
+/* Sidebar Styling */
+
+:host {
+    display: block;
+    width: 100%; /* Take full width of .sidebar (12% of parent) */
+    height: 100vh; /* Full viewport height */
+    background: inherit; /* Inherit gradient from parent */
+}
+
+
+/* Sidebar Title */
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Sidebar Navigation */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Sidebar Links */
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
