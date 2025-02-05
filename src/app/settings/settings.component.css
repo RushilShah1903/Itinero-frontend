@@ -1,0 +1,58 @@
+.dashboard-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h2 {
+    margin-bottom: 15px;
+}
+
+/* Form Inputs */
+.dashboard-section label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.dashboard-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d1ecff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Lists */
+.dashboard-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-section ul li {
+    background: #f0f8ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Economy Management Button */
+.dashboard-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2; /* Teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.dashboard-section button:hover {
+    background-color: #357ABD; /* Darker teal */
+}

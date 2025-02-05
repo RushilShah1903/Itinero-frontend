@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  role: 'admin' | 'user' = 'user'; // Default role (Change dynamically based on authentication)
+  role: 'admin' | 'user' = 'admin'; // Default role (Change dynamically based on authentication)
 
   constructor() { }
 

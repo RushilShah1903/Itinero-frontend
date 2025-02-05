@@ -1,0 +1,68 @@
+/* Container for the expense report */
+.dashboard-section {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #2c3e50; /* Navy */
+    margin-bottom: 20px;
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .filter-section select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Total Expense Display */
+  .total-expense {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a90e2; /* Teal */
+    margin-bottom: 20px;
+  }
+  
+  /* Expense Table */
+  .expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .expense-table th, .expense-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .expense-table th {
+    background-color: #4a90e2; /* Teal */
+    color: white;
+  }
+  
+  .expense-table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for rows */
+  .expense-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

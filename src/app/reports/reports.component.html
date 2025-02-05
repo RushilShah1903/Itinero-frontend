@@ -1,1 +1,41 @@
-<p>reports works!</p>
+<div class="dashboard-section">
+    <h2>Expense Report</h2>
+  
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <label for="categoryFilter">Filter by Category:</label>
+      <select id="categoryFilter" [(ngModel)]="selectedCategory" (change)="filterExpenses()">
+        <option value="all">All</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Flight">Flight</option>
+      </select>
+    </div>
+  
+    <!-- Total Expense Display -->
+    <div class="total-expense">
+      <strong>Total Expense: ${{ totalExpense.toFixed(2) }}</strong>
+    </div>
+  
+    <!-- Expense Table -->
+    <table class="expense-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Employee Name</th>
+          <th>Category</th>
+          <th>Amount ($)</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let expense of filteredExpenses">
+          <td>{{ expense.id }}</td>
+          <td>{{ expense.employeeName }}</td>
+          <td>{{ expense.category }}</td>
+          <td>{{ expense.amount }}</td>
+          <td>{{ expense.date | date:'shortDate' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
