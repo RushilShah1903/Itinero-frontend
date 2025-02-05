@@ -1,17 +1,16 @@
 <div class="sidebar">
     <h2>Itinero</h2>
     <ul>
-        <li *ngIf="role === 'admin'"><a routerLink="/admin/dashboard" routerLinkActive="active">Admin Dashboard</a></li>
-        <li *ngIf="role === 'admin'"><a routerLink="/admin/users" routerLinkActive="active">Manage Users</a></li>
-        <li *ngIf="role === 'admin'"><a routerLink="/admin/bookings" routerLinkActive="active">Manage Bookings</a></li>
-        <li *ngIf="role === 'admin'"><a routerLink="/admin/reports" routerLinkActive="active">Expense Reports</a></li>
-        <li *ngIf="role === 'admin'"><a routerLink="/admin/settings" routerLinkActive="active">Settings</a></li>
-
-        <li *ngIf="role === 'user'"><a routerLink="/user-dashboard" routerLinkActive="active">User Dashboard</a></li>
-        <li *ngIf="role === 'user'"><a routerLink="/user-trips" routerLinkActive="active">My Trips</a></li>
-        <li *ngIf="role === 'user'"><a routerLink="/user-bookings" routerLinkActive="active">Bookings</a></li>
-        <li *ngIf="role === 'user'"><a routerLink="/user-settings" routerLinkActive="active">Settings</a></li>
-
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li *ngIf="role === 'admin'"><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li *ngIf="role === 'admin'"><a routerLink="/manage-bookings" routerLinkActive="active">Manage Bookings</a></li>
+        <li *ngIf="role === 'admin'"><a routerLink="/manage-users" routerLinkActive="active">Manage Users</a></li>
+        <li *ngIf="role === 'admin'"><a routerLink="/reports" routerLinkActive="active">Expense Reports</a></li>
+        
+        <li><a routerLink="/booking" routerLinkActive="active">Book a Trip</a></li>
+        <li><a routerLink="/trips" routerLinkActive="active">My Trips</a></li>
+        
+        <li><a routerLink="/settings" routerLinkActive="active">Settings</a></li>
         <li><a routerLink="/login">Logout</a></li>
     </ul>
 </div>

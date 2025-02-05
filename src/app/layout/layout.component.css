@@ -8,22 +8,11 @@
 /* Sidebar (12% width) */
 .sidebar {
     width: 12%;
-    height: 100vh;
-    background: linear-gradient(135deg, #2c3e50, #4a90e2); /* Navy to Teal */
-    color: white;
-    padding: 20px;
-    position: fixed; /* Fixed sidebar */
-    left: 0;
-    top: 0;
-    overflow-y: auto; /* Enables scrolling if needed */
+    /* height: 100vh; */
 }
 
 /* Main Content (88% width) */
 .main-content {
     width: 88%;
-    margin-left: 12%; /* Push content next to sidebar */
-    padding: 20px;
-    background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Soft Beige to White */
-    color: #2c3e50; /* Navy */
-    overflow-y: auto; /* Prevents content from overflowing */
+    /* height: 100vh; */
 }

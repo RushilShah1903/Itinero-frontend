@@ -1,0 +1,62 @@
+/* Container */
+.trips-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.trips-container h2 {
+    color: #2c3e50; /* Navy */
+    margin-bottom: 20px;
+}
+
+/* Label */
+.trips-container label {
+    font-weight: bold;
+    color: #2c3e50; /* Navy */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Styling */
+.trips-container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4a90e2; /* Teal border */
+    border-radius: 5px;
+    background: #f0f8ff; /* Light beige/soft background */
+    color: #2c3e50; /* Navy */
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Dropdown Hover & Focus */
+.trips-container select:hover,
+.trips-container select:focus {
+    background: #e0f7ff; /* Lighter teal */
+    border-color: #357ABD; /* Darker teal */
+}
+
+/* List Styling */
+.trips-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.trips-container ul li {
+    background: #f0f8ff;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border-left: 5px solid #4a90e2; /* Teal left border for visual cue */
+    color: #2c3e50; /* Navy */
+    font-size: 16px;
+}

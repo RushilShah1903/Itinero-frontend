@@ -1,12 +1,19 @@
 /* Sidebar Styling */
-
-:host {
-    display: block;
-    width: 100%; /* Take full width of .sidebar (12% of parent) */
-    height: 100vh; /* Full viewport height */
-    background: inherit; /* Inherit gradient from parent */
+.sidebar {
+    width: 100%;
+    /* Fixed width */
+    height: 100%;
+    /* Full viewport height */
+    background: linear-gradient(135deg, #2c3e50, #4a90e2);
+    /* Navy to Teal */
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    /* Fixed position on the left */
+    left: 0;
+    top: 0;
+    /* Enables scrolling if needed */
 }
-
 
 /* Sidebar Title */
 .sidebar h2 {

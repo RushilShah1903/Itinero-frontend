@@ -6,9 +6,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
-import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { BookingManagementComponent } from './booking-management/booking-management.component';
+import { UserTripsComponent } from './user-trips/user-trips.component';
+import { HomeComponent } from './home/home.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { ReportsComponent } from './reports/reports.component';
+import { SettingsComponent } from './settings/settings.component';
+import { BooktripComponent } from './booktrip/booktrip.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +23,20 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LoginComponent,
     RegisterComponent,
     AdminDashboardComponent,
-    UserDashboardComponent,
     LayoutComponent,
-    SidebarComponent
+    SidebarComponent,
+    BookingManagementComponent,
+    UserTripsComponent,
+    HomeComponent,
+    ManageUserComponent,
+    ReportsComponent,
+    SettingsComponent,
+    BooktripComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
