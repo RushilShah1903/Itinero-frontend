@@ -3,7 +3,7 @@
     <ul>
         <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
         <li *ngIf="role === 'admin'"><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
-        <li *ngIf="role === 'admin'"><a routerLink="/manage-bookings" routerLinkActive="active">Manage Bookings</a></li>
+        <li *ngIf="role === 'admin'"><a routerLink="/manage-bookings" routerLinkActive="active">Manage Trips</a></li>
         <li *ngIf="role === 'admin'"><a routerLink="/manage-users" routerLinkActive="active">Manage Users</a></li>
         <li *ngIf="role === 'admin'"><a routerLink="/reports" routerLinkActive="active">Expense Reports</a></li>
         
