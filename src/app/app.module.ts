@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -16,12 +13,11 @@ import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BooktripComponent } from './booktrip/booktrip.component';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent,
     AdminDashboardComponent,
     LayoutComponent,
     SidebarComponent,
@@ -31,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     ManageUserComponent,
     ReportsComponent,
     SettingsComponent,
-    BooktripComponent
+    BooktripComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
