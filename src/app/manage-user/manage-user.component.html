@@ -1,1 +1,61 @@
-<p>manage-user works!</p>
+<div class="dashboard-section">
+    <h2>User Management</h2>
+  
+    <!-- Add User Button -->
+    <div class="actions">
+      <button class="action-button" (click)="addUser()">Add New User</button>
+    </div>
+  
+    <!-- User Table -->
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>{{ user.status }}</td>
+          <td>
+            <button class="action-button" (click)="editUser(user)">Edit</button>
+            <button class="action-button delete" (click)="deleteUser(user.id, user.role)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- User Edit Form -->
+    <div *ngIf="selectedUser" class="edit-form">
+      <h3>{{ selectedUser.id ? 'Edit' : 'Add' }} User</h3>
+      <label for="name">Name</label>
+      <input type="text" id="name" [(ngModel)]="selectedUser.name" placeholder="Name">
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="selectedUser.email" placeholder="Email">
+  
+      <label for="role">Role</label>
+      <select id="role" [(ngModel)]="selectedUser.role">
+        <option value="Admin">Admin</option>
+        <option value="User">User</option>
+      </select>
+  
+      <label for="status">Status</label>
+      <select id="status" [(ngModel)]="selectedUser.status">
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+  
+      <div class="form-actions">
+        <button class="action-button save" (click)="saveUser()">Save</button>
+        <button class="action-button cancel" (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+  </div>
+  

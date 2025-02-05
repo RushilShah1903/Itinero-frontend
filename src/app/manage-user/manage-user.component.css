@@ -1,0 +1,125 @@
+/* Container for user management */
+.dashboard-section {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #2c3e50; /* Navy */
+    margin-bottom: 20px;
+  }
+  
+  /* Actions Section (Add User Button) */
+  .actions {
+    margin-bottom: 20px;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: #4a90e2; /* Teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #357ABD; /* Darker teal */
+  }
+  
+  .action-button.delete {
+    background-color: #e74c3c; /* Red */
+  }
+  
+  .action-button.delete:hover {
+    background-color: #c0392b; /* Darker red */
+  }
+  
+  /* User Table */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #4a90e2; /* Teal */
+    color: white;
+  }
+  
+  .user-table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for rows */
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Edit Form */
+  .edit-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .edit-form h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #2c3e50;
+  }
+  
+  .edit-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .edit-form input, .edit-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d1ecff;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Form actions */
+  .form-actions {
+    margin-top: 20px;
+  }
+  
+  .form-actions button {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .form-actions button.save {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .form-actions button.cancel {
+    background-color: #ccc;
+    color: white;
+  }
+  
+  .form-actions button:hover {
+    opacity: 0.9;
+  }
+  
